@@ -2,4 +2,4 @@
 
 ## Effective Mobile API fixes
 
-![rice][(docs/assets/images/рис.png)
+![rice](docs/assets/images/рис.png)
