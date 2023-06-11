@@ -3,22 +3,22 @@
     {
       "id": 1,
       "name": "Пекарни и кондитерское",
-      "image_url": "assets/images/пекарни_и_кондитерские.png"
+      "image_url": "https://vms2020.github.io/assets/images/пекарни_и_кондитерские.png"
     },
     {
       "id": 2,
       "name": "Фастфуд",
-      "image_url": "assets/images/фастфуд.png"
+      "image_url": "https://vms2020.github.io/assets/images/фастфуд.png"
     },
     {
       "id": 3,
       "name": "Азиатская кухня",
-      "image_url": "assets/images/рис.png"
+      "image_url": "https://vms2020.github.io/assets/images/рис.png"
     },
     {
       "id": 4,
       "name": "Супы",
-      "image_url": "assets/images/супы.png"
+      "image_url": "https://vms2020.github.io/assets/images/супы.png"
     }
   ]
 }
