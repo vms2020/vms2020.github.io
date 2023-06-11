@@ -6,4 +6,6 @@
 
 ![soup](https://vms2020.github.io/assets/images/супы.png)
 
-<iframe allowfullscreen="allowfullscreen" src="https://drive.google.com/file/d/1zTyl2iOaFMhT26X0-FdbE81lpRKPluPG/preview" ></iframe>
+https://drive.google.com/file/d/1zTyl2iOaFMhT26X0-FdbE81lpRKPluPG/preview
+
+
