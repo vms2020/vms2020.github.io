@@ -43250,7 +43250,8 @@ var $async$ym=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:n=A
 m=B.bF
 s=2
-return A.a3(A.Vc("https://run.mocky.io/v3/c7a508f2-a904-498a-8539-09d96785446e"),$async$ym)
+// return A.a3(A.Vc("https://run.mocky.io/v3/c7a508f2-a904-498a-8539-09d96785446e"),$async$ym)
+return A.a3(A.Vc("https://vms2020.github.io/api/local/dishes.json"),$async$ym)
 case 2:p=n.azV(m.DB(0,b,null))
 o=p.a
 if((o==null?null:o.length!==0)===!0){o.toString
@@ -43260,7 +43261,8 @@ o.toString
 q.d=o}return A.Z(null,r)}})
 return A.a_($async$ym,r)},
 ago(){this.r.aag("loading",null)
-A.Vc("https://run.mocky.io/v3/058729bd-1402-4578-88de-265481fd7d54").cp(new A.YM(this),t.P)},
+// A.Vc("https://run.mocky.io/v3/058729bd-1402-4578-88de-265481fd7d54").cp(new A.YM(this),t.P)},
+A.Vc("https://vms2020.github.io/api/local/categories.json").cp(new A.YM(this),t.P)},
 NP(a){var s,r=this.w
 if(!r.ap(0,a))r.bZ(0,a,new A.YL())
 else{s=r.h(0,a)
