@@ -12,34 +12,89 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* use 100dvh for mobile dynamic viewport */
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
-    .video-container {
+    
+    /* Wraps both the video container and the link vertically */
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Space between the video and the button */
       width: 90%;
       max-width: 800px;
+    }
+
+    .video-container {
+      width: 100%;
       background: #000;
       display: flex;
       justify-content: center;
       align-items: center;
-      max-height: 100vh; /* limit container height too */
+      max-height: 80vh; /* Leave room for the button below */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     }
+    
     video {
       max-width: 100%;
-      max-height: 100vh; /* or 100dvh */
+      max-height: 80vh;
       width: auto;
       height: auto;
       display: block;
       outline: none;
     }
+
+    /* Beautiful Dark-Themed Button Link */
+    .elfood-link {
+      display: inline-block;
+      padding: 12px 32px;
+      color: #ffffff;
+      background-color: #1f1f1f;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid #333333;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Subtle glow and lift effect on hover */
+    .elfood-link:hover {
+      background-color: #ffffff;
+      color: #121212;
+      border-color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+    }
+
+    /* Press down effect when clicked */
+    .elfood-link:active {
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body>
-  <div class="video-container">
-    <video controls autoplay muted playsinline preload="metadata">
-      <source src="https://media.githubusercontent.com/media/vms2020/vms2020.github.io/main/docs/assets/videos/screen-20230610-210257.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+
+  <!-- The wrapper keeps everything perfectly aligned in the middle -->
+  <div class="content-wrapper">
+    
+    <div class="video-container">
+      <video controls autoplay muted playsinline preload="metadata">
+        <source src="https://media.githubusercontent.com/media/vms2020/vms2020.github.io/main/docs/assets/videos/screen-20230610-210257.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- The styled link button -->
+    <a href="elfood/" class="elfood-link">Explore Elfood &rarr;</a>
+
   </div>
+
 </body>
 </html>
 

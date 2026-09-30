@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>elfoodflatter</title>
+  <style>
+    /* 1. Center everything on the screen and remove scrolls */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212; /* Dark theme to match your main page */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden; /* Prevents scrollbars on the main page */
+    }
+
+    /* 2. Style the responsive iframe container */
+    iframe {
+      border: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+      
+      /* Base sizing rules */
+      width: 100vw;
+      height: 100vh;
+      
+      /* Set the maximum dimensions matching your native resolution */
+      max-width: 500px;
+      max-height: 800px;
+      
+      /* Scale smoothly if the screen is smaller than 500x800 */
+      aspect-ratio: 5 / 8; 
+    }
+
+    /* 3. Safe fallback for older mobile viewports */
+    @media (max-aspect-ratio: 5/8) {
+      iframe {
+        height: auto;
+        width: 100vw;
+      }
+    }
+    @media (min-aspect-ratio: 5/8) {
+      iframe {
+        width: auto;
+        height: 100vh;
+      }
+    }
+  </style>
 </head>
 <body>
-         <iframe width="500" height="800" src="/elfood/web/index.html" title="Effective Mobile Test T.Z."></iframe>
 
+   <iframe src="web/index.html" title="Effective Mobile Test T.Z."></iframe>
 
 </body>
 </html>
